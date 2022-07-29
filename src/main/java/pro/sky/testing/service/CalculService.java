@@ -1,6 +1,7 @@
 package pro.sky.testing.service;
 
 import org.springframework.stereotype.Service;
+import pro.sky.testing.exeption.ZeroExeption;
 
 @Service
 public class CalculService implements CalculatorService{
@@ -20,6 +21,9 @@ public class CalculService implements CalculatorService{
     }
 
     public Integer divide(Integer num1, Integer num2) {
+        if(num2 == 0){
+            throw  new ZeroExeption();
+        }
         return num1/num2;
     }
 
