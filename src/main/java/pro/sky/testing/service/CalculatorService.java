@@ -3,8 +3,8 @@ package pro.sky.testing.service;
 public interface CalculatorService {
     String hello();
 
-    String plus(int num1, int num2);
-    String minus(int num1, int num2);
-    String multiply(int num1, int num2);
-    String divide(double num1, double num2);
+    Integer plus(Integer num1, Integer num2);
+    Integer minus(Integer num1, Integer num2);
+    Integer multiply(Integer num1, Integer num2);
+    Integer divide(Integer num1, Integer num2);
 }

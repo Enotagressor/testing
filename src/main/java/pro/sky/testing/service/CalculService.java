@@ -8,22 +8,19 @@ public class CalculService implements CalculatorService{
         return "Добро пожаловать в калькулятор";
     }
 
-    public String plus(int num1, int num2) {
-        return num1 + " + " + num2 + " = " + (num1+num2);
+    public Integer plus(Integer num1, Integer num2) {
+        return num1+num2;
     }
 
-    public String minus(int num1, int num2) {
-        return num1 + " - " + num2 + " = " + (num1-num2);
+    public Integer minus(Integer num1, Integer num2) {
+        return num1-num2;
     }
-    public String multiply(int num1, int num2) {
-        return num1 + " * " + num2 + " = " + (num1*num2);
+    public Integer multiply(Integer num1, Integer num2) {
+        return num1*num2;
     }
 
-    public String divide(double num1, double num2) {
-        if (num2 == 0){
-            return "ALARM DIVIDE on 0, NE TUPI";
-        }else return num1 + " / " + num2 + " = " + (num1/num2);
-
+    public Integer divide(Integer num1, Integer num2) {
+        return num1/num2;
     }
 
 }
